@@ -134,7 +134,7 @@ class Binomial(Distribution):
         try:
             assert self.p == other.p, 'p values are not equal'
         except AssertionError as error:
-            raise
+            raise error
 
         new = Binomial()
         new.n = self.n + other.n 
